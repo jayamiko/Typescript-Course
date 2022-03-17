@@ -52,5 +52,5 @@ const myData = (name: string, age: number, photo?: string): string => {
   return name + age + photo;
 };
 
-const hasil = myData("Jaya Miko", 23 //Photo Undefined);
+const hasil = myData("Jaya Miko", 23);
 console.log(hasil);
