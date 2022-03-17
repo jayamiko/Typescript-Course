@@ -1,2 +1,2 @@
 "use strict";
-console.log("Asalamu'alaikum Jaya Miko");
+console.log("Berhasil Compile Javascript");
