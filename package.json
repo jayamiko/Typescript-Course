@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "tsc && node ./build/index.js",
-    "dev": "nodemon ./build/src/Function/function.js"
+    "dev": "nodemon ./build/src/Object/object.js"
   },
   "author": "",
   "license": "ISC",
