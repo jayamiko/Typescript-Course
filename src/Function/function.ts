@@ -35,3 +35,22 @@ const Add: Add = (val1: number, val2: number): number => {
 };
 const resultAdd = Add(5, 5);
 console.log(resultAdd);
+
+// DEFAULT PARAMETER DALAM FUNCTION
+const fullName = (
+  firstName: string,
+  middleName: string,
+  lastName: string = "Yoga Pratama"
+): string => {
+  return `${firstName} ${middleName} ${lastName}`;
+};
+const NamaSaya = fullName("Jaya", "Miko");
+console.log(NamaSaya);
+
+// OPTIONAL PARAMETER
+const myData = (name: string, age: number, photo?: string): string => {
+  return name + age + photo;
+};
+
+const hasil = myData("Jaya Miko", 23 //Photo Undefined);
+console.log(hasil);
