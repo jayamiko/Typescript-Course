@@ -31,3 +31,18 @@ console.log("Cat see", cat.see);
 console.log("Cat Jump:", cat.jump);
 console.log("Cat eat:", cat.eats("fish"));
 console.log("Cat behaviour:", cat.getBehaviour());
+
+// Static Prop / Method
+export class Form {
+  static role = "Admin";
+  constructor(public fistName: string, public lastName: string) {}
+  static getData() {
+    return "Data Admin";
+  }
+}
+
+const role = Form.role;
+const data = Form.getData();
+
+console.log(role);
+console.log(data);

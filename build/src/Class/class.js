@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Animals = void 0;
+exports.Form = exports.Animals = void 0;
 // Class pada Typescript
 class Animals {
     constructor(run, see) {
@@ -35,3 +35,19 @@ console.log("Cat see", cat.see);
 console.log("Cat Jump:", cat.jump);
 console.log("Cat eat:", cat.eats("fish"));
 console.log("Cat behaviour:", cat.getBehaviour());
+// Static Prop / Method
+class Form {
+    constructor(fistName, lastName) {
+        this.fistName = fistName;
+        this.lastName = lastName;
+    }
+    static getData() {
+        return "Data Admin";
+    }
+}
+exports.Form = Form;
+Form.role = "Admin";
+const role = Form.role;
+const data = Form.getData();
+console.log(role);
+console.log(data);
